@@ -43,7 +43,7 @@ body {
   .input-customer {
     font-weight: normal !important;
     font-size: 18px !important;
-    line-height: normal;
+    line-height: normal !important;
     position: absolute;
     top: 190px;
     left: 515px;
@@ -64,7 +64,7 @@ body {
   }
   .input-items {
     position: absolute;
-    font-size: 16px !important;
+    font-size: 18px !important;
     top: 410px;
     left: 50px;
     z-index: 999;
@@ -193,12 +193,14 @@ body {
     font-size: 0.7cm;
     top: 185px;
     left: 600px;
+    max-width: 11.5cm !important;
   }
   .input-customer {
     position: absolute;
-    line-height: normal;
     z-index: 999;
-    font-size: 0.6cm;
+    font-size: 0.7cm;
+    max-width: 11.5cm !important;
+    line-height: normal !important;
     top: 230px;
     left: 600px;
   }
@@ -206,6 +208,7 @@ body {
     position: absolute;
     z-index: 999;
     font-size: 0.6cm;
+    max-width: 11.5cm !important;
     top: 320px;
     left: 600px;
   }
