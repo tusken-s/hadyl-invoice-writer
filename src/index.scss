@@ -169,15 +169,23 @@ body {
     width: 6cm;
     height: auto;
   }
+  .version {
+    cursor: help;
+    opacity: 0.1;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: smaller;
+    color: white;
+    transition: opacity 0.3s;
+    &:hover {
+      transition: opacity 0.3s;
+      opacity: 1;
+    }
+  }
 }
 
 @media print {
-  .btn-print {
-    display: none;
-  }
-  .btn-add-item {
-    display: none;
-  }
   .input-uid {
     position: absolute;
     z-index: 999;
@@ -310,6 +318,15 @@ body {
   }
   textarea {
     resize: none;
+  }
+  .version {
+    display: none;
+  }
+  .btn-print {
+    display: none;
+  }
+  .btn-add-item {
+    display: none;
   }
   ::-webkit-input-placeholder {
     /* WebKit browsers */

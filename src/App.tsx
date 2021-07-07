@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Input, Button } from "antd";
-import { PrinterOutlined, PlusCircleOutlined } from "@ant-design/icons";
+import {
+  PrinterOutlined,
+  PlusCircleOutlined,
+  BranchesOutlined,
+} from "@ant-design/icons";
 import stamp from "./stamp.png";
 
 const { TextArea } = Input;
@@ -264,6 +268,9 @@ function App() {
         onClick={print}
         disabled={!uid || !total || total === "NaN"}
       />
+      <span className="version">
+        <BranchesOutlined /> version: {require("../package.json").version}
+      </span>
     </>
   );
 }
