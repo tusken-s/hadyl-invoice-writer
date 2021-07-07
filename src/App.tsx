@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Input, Button } from "antd";
 import { PrinterOutlined, PlusCircleOutlined } from "@ant-design/icons";
+import stamp from "./stamp.png";
 
 const { TextArea } = Input;
 
@@ -230,7 +231,7 @@ function App() {
       />
       <img
         className="stamp"
-        src={"/stamp.png"}
+        src={stamp}
         loading="eager"
         alt="Signature & stamp"
       />

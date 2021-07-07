@@ -2,7 +2,7 @@
   "name": "hadyl-invoice-writer",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://tusken-s.github.io/hadyl-invoice-writer",
+  "homepage": "https://tusken-s.github.io/hadyl-invoice-writer",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
