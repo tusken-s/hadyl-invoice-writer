@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  #root {
+    * {
+      font-family: "Lato", sans-serif;
+    }
+    input,
+    textarea {
+      border: none;
+      background: none;
+      padding: 0;
+    }
+  }
+}
+
+@media screen {
+  .btn-print {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 99999;
+  }
+  .btn-add-item {
+    position: fixed;
+    right: 50px;
+    bottom: 120px;
+    z-index: 99999;
+  }
+  .input-uid {
+    font-weight: bold !important;
+    font-size: 0.7cm !important;
+    position: absolute;
+    z-index: 999;
+    top: 155px;
+    left: 515px;
+    width: 330px;
+  }
+  .input-customer {
+    font-weight: normal !important;
+    font-size: 18px !important;
+    position: absolute;
+    top: 190px;
+    left: 515px;
+    z-index: 999;
+    width: 330px;
+    height: 75px;
+    max-width: 330px;
+    max-height: 75px;
+  }
+  .input-date {
+    font-weight: normal !important;
+    font-size: 18px !important;
+    position: absolute;
+    top: 270px;
+    left: 515px;
+    z-index: 999;
+    width: 330px;
+  }
+  .input-items {
+    position: absolute;
+    font-size: 16px !important;
+    top: 410px;
+    left: 50px;
+    z-index: 999;
+    td {
+      vertical-align: top;
+    }
+    .input-item-qty {
+      text-align: center;
+      width: 40px;
+      margin-right: 20px;
+      font-size: inherit !important;
+    }
+    .input-item-desc {
+      width: 275px;
+      max-width: 275px;
+      margin-right: 20px;
+      font-size: inherit !important;
+    }
+    .input-item-unit {
+      text-align: center;
+      width: 55px;
+      margin-right: 20px;
+      font-size: inherit !important;
+    }
+    .input-item-price {
+      text-align: right;
+      width: 90px;
+      margin-right: 50px;
+      font-size: inherit !important;
+    }
+    .input-item-total {
+      text-align: right;
+      width: 90px;
+      font-size: inherit !important;
+    }
+  }
+  .input-sub-text {
+    position: absolute;
+    font-size: 0.6cm;
+    font-weight: normal;
+    top: 755px;
+    left: 440px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-price-text {
+    position: absolute;
+    font-size: 0.6cm;
+    font-weight: normal;
+    top: 795px;
+    left: 440px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-sub {
+    position: absolute;
+    text-align: right;
+    font-size: 0.65cm;
+    font-weight: normal;
+    top: 755px;
+    left: 625px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-price {
+    position: absolute;
+    text-align: right;
+    font-size: 0.65cm;
+    font-weight: normal;
+    top: 795px;
+    left: 625px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-net {
+    position: absolute;
+    text-align: right;
+    font-size: 0.7cm;
+    font-weight: bold;
+    top: 835px;
+    left: 590px;
+    width: 5cm;
+    z-index: 999;
+  }
+  .input-note {
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    top: 765px;
+    left: 65px;
+    width: 330px;
+    max-width: 330px;
+    height: 95px;
+    max-height: 95px;
+    z-index: 999;
+  }
+  .stamp {
+    position: absolute;
+    z-index: 999;
+    top: 23.5cm;
+    right: 2cm;
+    width: 6cm;
+    height: auto;
+  }
+}
+
+@media print {
+  .btn-print {
+    display: none;
+  }
+  .btn-add-item {
+    display: none;
+  }
+  .input-uid {
+    position: absolute;
+    z-index: 999;
+    font-weight: bolder;
+    font-size: 0.7cm;
+    top: 185px;
+    left: 600px;
+  }
+  .input-customer {
+    position: absolute;
+    z-index: 999;
+    font-size: 0.6cm;
+    top: 230px;
+    left: 600px;
+  }
+  .input-date {
+    position: absolute;
+    z-index: 999;
+    font-size: 0.6cm;
+    top: 320px;
+    left: 600px;
+  }
+  .input-items {
+    position: absolute;
+    z-index: 999;
+    max-width: 850px;
+    top: 480px;
+    left: 1cm;
+    td {
+      vertical-align: top;
+    }
+    .input-item-qty {
+      text-align: center;
+      width: 2cm;
+      margin-right: 0.5cm;
+      font-size: 0.6cm;
+    }
+    .input-item-desc {
+      font-size: 0.6cm;
+      width: 8.5cm;
+      margin-right: 1cm;
+    }
+    .input-item-unit {
+      text-align: center;
+      font-size: 0.6cm;
+      width: 1.5cm;
+      margin-right: 0.5cm;
+    }
+    .input-item-price {
+      text-align: right;
+      font-size: 0.6cm;
+      width: 3.5cm;
+      margin-right: 1cm;
+    }
+    .input-item-total {
+      text-align: right;
+      font-size: 0.6cm;
+      width: 3.5cm;
+      margin-right: 1cm;
+    }
+  }
+  .input-sub-text {
+    position: absolute;
+    font-size: 0.6cm;
+    font-weight: normal;
+    top: 900px;
+    left: 525px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-price-text {
+    position: absolute;
+    font-size: 0.6cm;
+    font-weight: normal;
+    top: 945px;
+    left: 525px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-sub {
+    position: absolute;
+    text-align: right;
+    font-size: 0.65cm;
+    font-weight: normal;
+    top: 895px;
+    left: 765px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-price {
+    position: absolute;
+    text-align: right;
+    font-size: 0.65cm;
+    font-weight: normal;
+    top: 945px;
+    left: 765px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-net {
+    position: absolute;
+    text-align: right;
+    font-size: 0.7cm;
+    font-weight: bold;
+    top: 995px;
+    left: 730px;
+    width: 5cm;
+    z-index: 999;
+  }
+  .input-note {
+    position: absolute;
+    z-index: 999;
+    font-size: 0.6cm;
+    top: 905px;
+    left: 80px;
+    width: 390px;
+    height: 115px;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    page-break-after: always !important;
+  }
+  textarea {
+    resize: none;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent !important;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent !important;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent !important;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent !important;
+  }
+  input::placeholder {
+    color: transparent !important;
+  }
+  textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent !important;
+  }
+  textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent !important;
+  }
+  textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent !important;
+  }
+  textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent !important;
+  }
+  textarea::placeholder {
+    color: transparent !important;
+  }
+}
