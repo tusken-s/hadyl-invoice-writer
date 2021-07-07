@@ -19,11 +19,9 @@
 .ws1{word-spacing:5.600000px;}
 .ws3{word-spacing:41.472000px;}
 .ws2{word-spacing:134.736000px;}
-._9{margin-left:-134.736000px;}
 ._8{margin-left:-122.880000px;}
 ._4{margin-left:-10.091200px;}
 ._0{margin-left:-4.000000px;}
-._7{margin-left:-1.440000px;}
 ._1{width:5.600000px;}
 ._5{width:25.944800px;}
 ._2{width:38.942400px;}
@@ -31,6 +29,14 @@
 ._a{width:83.721600px;}
 ._b{width:93.264000px;}
 ._3{width:133.196000px;}
+.fst{margin-top:-65px;font-family:"Lato",sans-serif;}
+.fst td{padding: 10px}
+.fst th{text-align: left;}
+.t-c-1{position:absolute;bottom:875px;left:55px;font-family:"Lato",sans-serif;font-size:20px}
+.t-c-2{position:absolute;bottom:875px;left:225px;font-family:"Lato",sans-serif;font-size:20px}
+.t-c-3{position:absolute;bottom:875px;left:435px;font-family:"Lato",sans-serif;font-size:20px}
+.t-c-4{position:absolute;bottom:875px;left:525px;font-family:"Lato",sans-serif;font-size:20px}
+.t-c-5{position:absolute;bottom:875px;left:685px;font-family:"Lato",sans-serif;font-size:20px}
 .fc1{color:rgb(244,244,244);}
 .fc0{color:rgb(35,31,32);}
 .fs4{font-size:48.000000px;}
@@ -79,11 +85,9 @@
     .ws1{word-spacing:4.977778pt;}
     .ws3{word-spacing:36.864000pt;}
     .ws2{word-spacing:119.765333pt;}
-    ._9{margin-left:-119.765333pt;}
     ._8{margin-left:-109.226667pt;}
     ._4{margin-left:-8.969956pt;}
     ._0{margin-left:-3.555556pt;}
-    ._7{margin-left:-1.280000pt;}
     ._1{width:4.977778pt;}
     ._5{width:23.062044pt;}
     ._2{width:34.615467pt;}
@@ -104,7 +108,6 @@
     .y9{bottom:261.634667pt;}
     .y8{bottom:280.834667pt;}
     .y6{bottom:355.550800pt;}
-    .y5{bottom:784.725200pt;}
     .y4{bottom:863.382667pt;}
     .y3{bottom:930.582667pt;}
     .y2{bottom:956.789067pt;}
