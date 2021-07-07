@@ -190,8 +190,8 @@ body {
     position: absolute;
     z-index: 999;
     font-weight: bolder;
-    font-size: 0.7cm;
-    top: 185px;
+    font-size: 0.75cm;
+    top: 190px;
     left: 600px;
     max-width: 11.5cm !important;
   }
@@ -307,6 +307,14 @@ body {
     left: 80px;
     width: 390px;
     height: 115px;
+  }
+  .stamp {
+    position: absolute;
+    z-index: 999;
+    top: 27.5cm;
+    right: 3.5cm;
+    width: 7.5cm;
+    height: auto;
   }
 }
 
