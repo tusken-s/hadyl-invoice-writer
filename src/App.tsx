@@ -129,7 +129,6 @@ function App() {
                   className="input-item-desc"
                   placeholder="Item name and/or description"
                   bordered={false}
-                  rows={1}
                   value={item.desc}
                   onChange={(e) =>
                     setItems(

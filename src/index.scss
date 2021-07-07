@@ -66,7 +66,7 @@ body {
     position: absolute;
     font-size: 18px !important;
     top: 410px;
-    left: 50px;
+    left: 90px;
     z-index: 999;
     td {
       vertical-align: top;
@@ -74,13 +74,13 @@ body {
     .input-item-qty {
       text-align: center;
       width: 40px;
-      margin-right: 30px;
+      margin-right: 35px;
       font-size: inherit !important;
     }
     .input-item-desc {
       width: 275px;
-      max-width: 275px;
-      margin-right: 20px;
+      max-width: 285px;
+      margin-right: 25px;
       font-size: inherit !important;
     }
     .input-item-unit {
@@ -106,7 +106,7 @@ body {
     font-size: 0.6cm;
     font-weight: normal;
     top: 755px;
-    left: 440px;
+    left: 480px;
     width: 4cm;
     z-index: 999;
   }
@@ -115,7 +115,17 @@ body {
     font-size: 0.6cm;
     font-weight: normal;
     top: 795px;
-    left: 440px;
+    left: 480px;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-net-text {
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7cm;
+    font-weight: bold;
+    top: 835px;
+    left: 480px;
     width: 4cm;
     z-index: 999;
   }
@@ -125,7 +135,7 @@ body {
     font-size: 0.65cm;
     font-weight: normal;
     top: 755px;
-    left: 625px;
+    left: 670px;
     width: 4cm;
     z-index: 999;
   }
@@ -135,7 +145,7 @@ body {
     font-size: 0.65cm;
     font-weight: normal;
     top: 795px;
-    left: 625px;
+    left: 670px;
     width: 4cm;
     z-index: 999;
   }
@@ -145,7 +155,7 @@ body {
     font-size: 0.7cm;
     font-weight: bold;
     top: 835px;
-    left: 590px;
+    left: 635px;
     width: 5cm;
     z-index: 999;
   }
@@ -217,20 +227,22 @@ body {
     z-index: 999;
     max-width: 850px;
     top: 480px;
-    left: 1cm;
+    left: 2.5cm;
     td {
       vertical-align: top;
     }
     .input-item-qty {
       text-align: center;
       width: 2cm;
-      margin-right: 0.5cm;
+      margin-right: 1cm;
       font-size: 0.6cm;
     }
     .input-item-desc {
       font-size: 0.6cm;
       width: 8.5cm;
+      max-width: 8.5cm;
       margin-right: 1cm;
+      line-height: normal !important;
     }
     .input-item-unit {
       text-align: center;
@@ -255,8 +267,8 @@ body {
     position: absolute;
     font-size: 0.6cm;
     font-weight: normal;
-    top: 900px;
-    left: 525px;
+    top: 23.75cm;
+    left: 15cm;
     width: 4cm;
     z-index: 999;
   }
@@ -264,8 +276,18 @@ body {
     position: absolute;
     font-size: 0.6cm;
     font-weight: normal;
-    top: 945px;
-    left: 525px;
+    top: 25cm;
+    left: 15cm;
+    width: 4cm;
+    z-index: 999;
+  }
+  .input-net-text {
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-size: 0.75cm;
+    font-weight: bold;
+    top: 26.25cm;
+    left: 15cm;
     width: 4cm;
     z-index: 999;
   }
@@ -274,8 +296,8 @@ body {
     text-align: right;
     font-size: 0.65cm;
     font-weight: normal;
-    top: 895px;
-    left: 765px;
+    top: 23.75cm;
+    left: 22cm;
     width: 4cm;
     z-index: 999;
   }
@@ -284,8 +306,8 @@ body {
     text-align: right;
     font-size: 0.65cm;
     font-weight: normal;
-    top: 945px;
-    left: 765px;
+    top: 25cm;
+    left: 22cm;
     width: 4cm;
     z-index: 999;
   }
@@ -294,8 +316,8 @@ body {
     text-align: right;
     font-size: 0.7cm;
     font-weight: bold;
-    top: 995px;
-    left: 730px;
+    top: 26.25cm;
+    left: 21cm;
     width: 5cm;
     z-index: 999;
   }
