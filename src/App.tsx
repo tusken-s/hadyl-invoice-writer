@@ -32,7 +32,7 @@ function App() {
 
   const print = () => {
     setItems(
-      items.map((e, n) => ({
+      items.map((e) => ({
         ...e,
         price: formatter.format(Number.parseFloat(e.price)),
         total: formatter.format(Number.parseFloat(e.total)),
@@ -81,7 +81,7 @@ function App() {
       <table className="input-items">
         <tbody>
           {items.map((item, i) => (
-            <tr>
+            <tr key={i}>
               <td>
                 <Input
                   className="input-item-qty"
@@ -230,7 +230,7 @@ function App() {
       />
       <img
         className="stamp"
-        src="/stamp.png"
+        src={"/stamp.png"}
         loading="eager"
         alt="Signature & stamp"
       />
