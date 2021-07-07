@@ -44,7 +44,22 @@ function App() {
       }))
     );
     setTotal(formatter.format(Number.parseFloat(total)));
-    setTimeout(() => window.print(), 500);
+    setTimeout(() => {
+      window.print();
+      setTimeout(() => {
+        setUid("");
+        setTotal("");
+        setItems([
+          {
+            qty: "",
+            desc: "",
+            unit: "",
+            price: "",
+            total: "",
+          },
+        ]);
+      }, 1000);
+    }, 500);
   };
 
   useEffect(() => {
