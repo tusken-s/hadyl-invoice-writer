@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/hadyl-invoice-writer/static/css/main.faa35f6b.chunk.css",
-    "main.js": "/hadyl-invoice-writer/static/js/main.f1522fe1.chunk.js",
-    "main.js.map": "/hadyl-invoice-writer/static/js/main.f1522fe1.chunk.js.map",
-    "runtime-main.js": "/hadyl-invoice-writer/static/js/runtime-main.0e24d7d0.js",
-    "runtime-main.js.map": "/hadyl-invoice-writer/static/js/runtime-main.0e24d7d0.js.map",
+    "main.css": "/hadyl-invoice-writer/static/css/main.c90d56df.chunk.css",
+    "main.js": "/hadyl-invoice-writer/static/js/main.bb3c4b3f.chunk.js",
+    "main.js.map": "/hadyl-invoice-writer/static/js/main.bb3c4b3f.chunk.js.map",
+    "runtime-main.js": "/hadyl-invoice-writer/static/js/runtime-main.ada61f18.js",
+    "runtime-main.js.map": "/hadyl-invoice-writer/static/js/runtime-main.ada61f18.js.map",
     "static/css/2.dbb450e1.chunk.css": "/hadyl-invoice-writer/static/css/2.dbb450e1.chunk.css",
-    "static/js/2.4dcf4135.chunk.js": "/hadyl-invoice-writer/static/js/2.4dcf4135.chunk.js",
-    "static/js/2.4dcf4135.chunk.js.map": "/hadyl-invoice-writer/static/js/2.4dcf4135.chunk.js.map",
-    "static/js/3.2df5d8d0.chunk.js": "/hadyl-invoice-writer/static/js/3.2df5d8d0.chunk.js",
-    "static/js/3.2df5d8d0.chunk.js.map": "/hadyl-invoice-writer/static/js/3.2df5d8d0.chunk.js.map",
+    "static/js/2.f55395a3.chunk.js": "/hadyl-invoice-writer/static/js/2.f55395a3.chunk.js",
+    "static/js/2.f55395a3.chunk.js.map": "/hadyl-invoice-writer/static/js/2.f55395a3.chunk.js.map",
+    "static/js/3.a23d1f36.chunk.js": "/hadyl-invoice-writer/static/js/3.a23d1f36.chunk.js",
+    "static/js/3.a23d1f36.chunk.js.map": "/hadyl-invoice-writer/static/js/3.a23d1f36.chunk.js.map",
     "index.html": "/hadyl-invoice-writer/index.html",
     "static/css/2.dbb450e1.chunk.css.map": "/hadyl-invoice-writer/static/css/2.dbb450e1.chunk.css.map",
-    "static/css/main.faa35f6b.chunk.css.map": "/hadyl-invoice-writer/static/css/main.faa35f6b.chunk.css.map",
-    "static/js/2.4dcf4135.chunk.js.LICENSE.txt": "/hadyl-invoice-writer/static/js/2.4dcf4135.chunk.js.LICENSE.txt"
+    "static/css/main.c90d56df.chunk.css.map": "/hadyl-invoice-writer/static/css/main.c90d56df.chunk.css.map",
+    "static/js/2.f55395a3.chunk.js.LICENSE.txt": "/hadyl-invoice-writer/static/js/2.f55395a3.chunk.js.LICENSE.txt",
+    "static/media/stamp.fcad2595.png": "/hadyl-invoice-writer/static/media/stamp.fcad2595.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e24d7d0.js",
+    "static/js/runtime-main.ada61f18.js",
     "static/css/2.dbb450e1.chunk.css",
-    "static/js/2.4dcf4135.chunk.js",
-    "static/css/main.faa35f6b.chunk.css",
-    "static/js/main.f1522fe1.chunk.js"
+    "static/js/2.f55395a3.chunk.js",
+    "static/css/main.c90d56df.chunk.css",
+    "static/js/main.bb3c4b3f.chunk.js"
   ]
 }
