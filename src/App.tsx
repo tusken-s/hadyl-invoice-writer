@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Input, Button } from "antd";
-import { PrinterTwoTone, PlusCircleOutlined } from "@ant-design/icons";
+import { PrinterOutlined, PlusCircleOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 
@@ -72,7 +72,12 @@ function App() {
         bordered={false}
         rows={3}
       />
-      <Input className="input-date" placeholder="2021/01/01" bordered={false} />
+      <Input
+        className="input-date"
+        placeholder="2021/01/01"
+        bordered={false}
+        defaultValue={new Date().toISOString().split("T")[0]}
+      />
       <table className="input-items">
         <tbody>
           {items.map((item, i) => (
@@ -91,7 +96,7 @@ function App() {
                               ...items[n],
                               qty: e.target.value,
                               total: `${(
-                                Number.parseFloat(x.qty) *
+                                Number.parseFloat(x.price || "0") *
                                 Number.parseFloat(e.target.value)
                               ).toFixed(2)}`,
                             }
@@ -119,7 +124,7 @@ function App() {
                   className="input-item-desc"
                   placeholder="Item name and/or description"
                   bordered={false}
-                  rows={2}
+                  rows={1}
                   value={item.desc}
                   onChange={(e) =>
                     setItems(
@@ -157,9 +162,10 @@ function App() {
                         n === i
                           ? {
                               ...items[n],
+                              qty: x.qty || "1",
                               price: e.target.value,
                               total: `${(
-                                Number.parseFloat(x.qty) *
+                                Number.parseFloat(x.qty || "1") *
                                 Number.parseFloat(e.target.value)
                               ).toFixed(2)}`,
                             }
@@ -253,8 +259,9 @@ function App() {
         shape="circle"
         size="large"
         style={{ width: 50, height: 50 }}
-        icon={<PrinterTwoTone style={{ fontSize: 30 }} />}
+        icon={<PrinterOutlined style={{ fontSize: 30 }} />}
         onClick={print}
+        disabled={!uid || !total || total === "NaN"}
       />
     </>
   );

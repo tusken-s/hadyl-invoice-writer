@@ -43,6 +43,7 @@ body {
   .input-customer {
     font-weight: normal !important;
     font-size: 18px !important;
+    line-height: normal;
     position: absolute;
     top: 190px;
     left: 515px;
@@ -73,7 +74,7 @@ body {
     .input-item-qty {
       text-align: center;
       width: 40px;
-      margin-right: 20px;
+      margin-right: 30px;
       font-size: inherit !important;
     }
     .input-item-desc {
@@ -84,14 +85,14 @@ body {
     }
     .input-item-unit {
       text-align: center;
-      width: 55px;
+      width: 60px;
       margin-right: 20px;
       font-size: inherit !important;
     }
     .input-item-price {
       text-align: right;
       width: 90px;
-      margin-right: 50px;
+      margin-right: 60px;
       font-size: inherit !important;
     }
     .input-item-total {
@@ -187,6 +188,7 @@ body {
   }
   .input-customer {
     position: absolute;
+    line-height: normal;
     z-index: 999;
     font-size: 0.6cm;
     top: 230px;
