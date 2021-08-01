@@ -1,6 +1,6 @@
 {
   "name": "hadyl-invoice-writer",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "private": true,
   "homepage": "https://tusken-s.github.io/hadyl-invoice-writer",
   "dependencies": {
