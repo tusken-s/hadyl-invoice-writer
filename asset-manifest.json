@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hadyl-invoice-writer/static/css/main.2a973fa0.chunk.css",
-    "main.js": "/hadyl-invoice-writer/static/js/main.d463c479.chunk.js",
-    "main.js.map": "/hadyl-invoice-writer/static/js/main.d463c479.chunk.js.map",
+    "main.js": "/hadyl-invoice-writer/static/js/main.6bb1e4f9.chunk.js",
+    "main.js.map": "/hadyl-invoice-writer/static/js/main.6bb1e4f9.chunk.js.map",
     "runtime-main.js": "/hadyl-invoice-writer/static/js/runtime-main.ada61f18.js",
     "runtime-main.js.map": "/hadyl-invoice-writer/static/js/runtime-main.ada61f18.js.map",
     "static/css/2.dbb450e1.chunk.css": "/hadyl-invoice-writer/static/css/2.dbb450e1.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.dbb450e1.chunk.css",
     "static/js/2.f55395a3.chunk.js",
     "static/css/main.2a973fa0.chunk.css",
-    "static/js/main.d463c479.chunk.js"
+    "static/js/main.6bb1e4f9.chunk.js"
   ]
 }
