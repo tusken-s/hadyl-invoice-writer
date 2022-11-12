@@ -19,10 +19,17 @@ body {
 }
 
 @media screen {
+  // Controls
   .btn-print {
     position: fixed;
     right: 50px;
     bottom: 50px;
+    z-index: 99999;
+  }
+  .btn-mode {
+    position: fixed;
+    top: 25px;
+    left: 25px;
     z-index: 99999;
   }
   .btn-add-item {
@@ -31,6 +38,21 @@ body {
     bottom: 120px;
     z-index: 99999;
   }
+  .version {
+    cursor: help;
+    opacity: 0.1;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: smaller;
+    color: white;
+    transition: opacity 0.3s;
+    &:hover {
+      transition: opacity 0.3s;
+      opacity: 1;
+    }
+  }
+  // Data
   .input-uid {
     font-weight: bold !important;
     font-size: 0.7cm !important;
@@ -171,6 +193,41 @@ body {
     max-height: 95px;
     z-index: 999;
   }
+  .text-title {
+    font-size: 26px !important;
+    font-weight: bolder !important;
+    line-height: normal !important;
+    position: absolute;
+    top: 220px;
+    left: 290px;
+    z-index: 999;
+    width: 350px;
+    height: 75px;
+    max-width: 350px;
+    max-height: 100px;
+    text-align: center;
+  }
+  .text-body {
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    top: 330px;
+    left: 70px;
+    width: 760px;
+    height: 680px !important;
+    z-index: 999;
+  }
+  .text-note {
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    top: 70px;
+    right: 75px;
+    width: 330px;
+    height: 125px !important;
+    z-index: 999;
+    text-align: right;
+  }
   .stamp {
     position: absolute;
     z-index: 999;
@@ -179,23 +236,72 @@ body {
     width: 6cm;
     height: auto;
   }
-  .version {
-    cursor: help;
-    opacity: 0.1;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: smaller;
-    color: white;
-    transition: opacity 0.3s;
-    &:hover {
-      transition: opacity 0.3s;
-      opacity: 1;
-    }
-  }
 }
 
 @media print {
+  html,
+  body {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    page-break-after: always !important;
+  }
+  // Controls
+  textarea {
+    resize: none;
+  }
+  .version {
+    display: none;
+  }
+  .btn-print {
+    display: none;
+  }
+  .btn-mode {
+    display: none;
+  }
+  .btn-add-item {
+    display: none;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent !important;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent !important;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent !important;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent !important;
+  }
+  input::placeholder {
+    color: transparent !important;
+  }
+  textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent !important;
+  }
+  textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent !important;
+  }
+  textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent !important;
+  }
+  textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent !important;
+  }
+  textarea::placeholder {
+    color: transparent !important;
+  }
+  // Data
   .input-uid {
     position: absolute;
     z-index: 999;
@@ -330,6 +436,41 @@ body {
     width: 390px;
     height: 115px;
   }
+  .text-title {
+    font-size: 30px !important;
+    font-weight: bolder !important;
+    line-height: normal !important;
+    position: absolute !important;
+    top: 280px !important;
+    left: 360px !important;
+    z-index: 999 !important;
+    width: 350px !important;
+    height: 75px !important;
+    max-width: 350px !important;
+    max-height: 100px !important;
+    text-align: center !important;
+  }
+  .text-body {
+    position: absolute !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    top: 400px !important;
+    left: 100px !important;
+    width: 875px !important;
+    height: 680px !important;
+    z-index: 999 !important;
+  }
+  .text-note {
+    position: absolute !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    top: 100px !important;
+    right: 75px !important;
+    width: 330px !important;
+    height: 125px !important;
+    z-index: 999 !important;
+    text-align: right !important;
+  }
   .stamp {
     position: absolute;
     z-index: 999;
@@ -337,66 +478,5 @@ body {
     right: 3.5cm;
     width: 7.5cm;
     height: auto;
-  }
-}
-
-@media print {
-  html,
-  body {
-    height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden;
-    page-break-after: always !important;
-  }
-  textarea {
-    resize: none;
-  }
-  .version {
-    display: none;
-  }
-  .btn-print {
-    display: none;
-  }
-  .btn-add-item {
-    display: none;
-  }
-  ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: transparent !important;
-  }
-  :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: transparent !important;
-  }
-  ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: transparent !important;
-  }
-  :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: transparent !important;
-  }
-  input::placeholder {
-    color: transparent !important;
-  }
-  textarea::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: transparent !important;
-  }
-  textarea:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: transparent !important;
-  }
-  textarea::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: transparent !important;
-  }
-  textarea:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: transparent !important;
-  }
-  textarea::placeholder {
-    color: transparent !important;
   }
 }

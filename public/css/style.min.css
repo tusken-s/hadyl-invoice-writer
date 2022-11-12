@@ -39,6 +39,7 @@
 .t-c-5{position:absolute;bottom:875px;left:730px;font-family:"Lato",sans-serif;font-size:20px}
 .fc1{color:rgb(244,244,244);}
 .fc0{color:rgb(35,31,32);}
+.fw{font-weight:bolder}
 .fs4{font-size:48.000000px;}
 .fs2{font-size:56.000000px;}
 .fs1{font-size:64.000000px;}
@@ -50,7 +51,7 @@
 .yb{bottom:251.139000px;}
 .ya{bottom:272.739000px;}
 .y9{bottom:294.339000px;}
-.y8{bottom:315.939000px;}
+.y8{bottom:245pt;}
 .y6{bottom:399.994650px;}
 .y5{bottom:882.815850px;}
 .y4{bottom:971.305500px;}
@@ -111,7 +112,7 @@
     .yb{bottom:223.234667pt;}
     .ya{bottom:242.434667pt;}
     .y9{bottom:261.634667pt;}
-    .y8{bottom:280.834667pt;}
+    .y8{bottom:245pt;}
     .y6{bottom:355.550800pt;}
     .y4{bottom:863.382667pt;}
     .y3{bottom:930.582667pt;}
