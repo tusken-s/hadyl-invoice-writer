@@ -29,7 +29,7 @@
 ._a{width:83.721600px;}
 ._b{width:93.264000px;}
 ._3{width:133.196000px;}
-.fst{margin-top:-65px;font-family:"Lato",sans-serif;}
+.fst{margin-top:-65px;font-family:"Lato",sans-serif;width: max-content;}
 .fst td{padding: 10px}
 .fst th{text-align: left;padding-right:50px}
 .t-c-1{position:absolute;bottom:875px;left:90px;font-family:"Lato",sans-serif;font-size:20px}
@@ -112,7 +112,7 @@
     .yb{bottom:223.234667pt;}
     .ya{bottom:242.434667pt;}
     .y9{bottom:261.634667pt;}
-    .y8{bottom:245pt;}
+    .y8{bottom:380px;}
     .y6{bottom:355.550800pt;}
     .y4{bottom:863.382667pt;}
     .y3{bottom:930.582667pt;}

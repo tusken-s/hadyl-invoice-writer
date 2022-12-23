@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Input, Button, Switch } from "antd";
+import { Input, Button, Switch, Typography } from "antd";
 import {
   PrinterOutlined,
   PlusCircleOutlined,
@@ -9,6 +9,7 @@ import stamp from "./assets/stamp.png";
 import BlancCover from "./assets/blanc.png";
 import BillCover from "./assets/cover.png";
 
+const { Paragraph } = Typography;
 const { TextArea } = Input;
 
 const formatter = new Intl.NumberFormat("fr-FR", {
@@ -29,6 +30,10 @@ function App() {
 
   // Bill state
   const [total, setTotal] = useState<string>("");
+  const [accountBank, setAccountBank] = useState<string>("Attijari BANK");
+  const [accountName, setAccountName] = useState<string>("Ste HADYL Consult");
+  const [accountNb, setAccountNb] = useState<string>("04034120004048782978");
+  const [accountSwift, setAccountSwift] = useState<string>("BSTUTNTT");
   const [items, setItems] = useState<
     {
       qty: string;
@@ -134,19 +139,59 @@ function App() {
               <tbody>
                 <tr>
                   <th>Bank:</th>
-                  <td>Attijari BANK</td>
+                  <td>
+                    <Paragraph
+                      className="input-account"
+                      editable={{
+                        tooltip: "Cliquez pour modifier le nom de banque",
+                        onChange: (x) => setAccountBank(x),
+                      }}
+                    >
+                      {accountBank}
+                    </Paragraph>
+                  </td>
                 </tr>
                 <tr>
                   <th>Account Name:</th>
-                  <td>Ste HADYL Consult</td>
+                  <td>
+                    <Paragraph
+                      className="input-account"
+                      editable={{
+                        tooltip: "Cliquez pour modifier le nom de compte",
+                        onChange: (x) => setAccountName(x),
+                      }}
+                    >
+                      {accountName}
+                    </Paragraph>
+                  </td>
                 </tr>
                 <tr>
                   <th>Account Number:</th>
-                  <td>04034120004048782978</td>
+                  <td>
+                    <Paragraph
+                      className="input-account"
+                      editable={{
+                        tooltip: "Cliquez pour modifier le numéro de compte",
+                        onChange: (x) => setAccountNb(x),
+                      }}
+                    >
+                      {accountNb}
+                    </Paragraph>
+                  </td>
                 </tr>
                 <tr>
                   <th>Swif Code:</th>
-                  <td>BSTUTNTT</td>
+                  <td>
+                    <Paragraph
+                      className="input-account"
+                      editable={{
+                        tooltip: "Cliquez pour modifier le type de compte",
+                        onChange: (x) => setAccountSwift(x),
+                      }}
+                    >
+                      {accountSwift}
+                    </Paragraph>
+                  </td>
                 </tr>
               </tbody>
             </table>

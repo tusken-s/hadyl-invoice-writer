@@ -236,6 +236,15 @@ body {
     width: 6cm;
     height: auto;
   }
+  .input-account {
+    margin: 0 !important;
+    &.ant-typography-edit-content {
+      .ant-input {
+        margin-right: 10px;
+        font-size: 48px;
+      }
+    }
+  }
 }
 
 @media print {
@@ -478,5 +487,11 @@ body {
     right: 3.5cm;
     width: 7.5cm;
     height: auto;
+  }
+  .input-account {
+    margin: 0 !important;
+    .ant-typography-edit {
+      display: none !important;
+    }
   }
 }
