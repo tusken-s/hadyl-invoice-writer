@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/hadyl-invoice-writer/static/css/main.271718fb.chunk.css",
+    "main.js": "/hadyl-invoice-writer/static/js/main.81a4ade4.chunk.js",
+    "main.js.map": "/hadyl-invoice-writer/static/js/main.81a4ade4.chunk.js.map",
+    "runtime-main.js": "/hadyl-invoice-writer/static/js/runtime-main.087049ee.js",
+    "runtime-main.js.map": "/hadyl-invoice-writer/static/js/runtime-main.087049ee.js.map",
+    "static/css/2.a7b9283d.chunk.css": "/hadyl-invoice-writer/static/css/2.a7b9283d.chunk.css",
+    "static/js/2.7ad45917.chunk.js": "/hadyl-invoice-writer/static/js/2.7ad45917.chunk.js",
+    "static/js/2.7ad45917.chunk.js.map": "/hadyl-invoice-writer/static/js/2.7ad45917.chunk.js.map",
+    "static/js/3.0c35e40f.chunk.js": "/hadyl-invoice-writer/static/js/3.0c35e40f.chunk.js",
+    "static/js/3.0c35e40f.chunk.js.map": "/hadyl-invoice-writer/static/js/3.0c35e40f.chunk.js.map",
+    "index.html": "/hadyl-invoice-writer/index.html",
+    "static/css/2.a7b9283d.chunk.css.map": "/hadyl-invoice-writer/static/css/2.a7b9283d.chunk.css.map",
+    "static/css/main.271718fb.chunk.css.map": "/hadyl-invoice-writer/static/css/main.271718fb.chunk.css.map",
+    "static/js/2.7ad45917.chunk.js.LICENSE.txt": "/hadyl-invoice-writer/static/js/2.7ad45917.chunk.js.LICENSE.txt",
+    "static/media/blanc.b8984366.png": "/hadyl-invoice-writer/static/media/blanc.b8984366.png",
+    "static/media/cover.4060cea8.png": "/hadyl-invoice-writer/static/media/cover.4060cea8.png",
+    "static/media/stamp.fcad2595.png": "/hadyl-invoice-writer/static/media/stamp.fcad2595.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.087049ee.js",
+    "static/css/2.a7b9283d.chunk.css",
+    "static/js/2.7ad45917.chunk.js",
+    "static/css/main.271718fb.chunk.css",
+    "static/js/main.81a4ade4.chunk.js"
+  ]
+}
