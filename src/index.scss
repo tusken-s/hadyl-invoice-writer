@@ -38,6 +38,13 @@ body {
     bottom: 120px;
     z-index: 99999;
   }
+  .currency {
+    position: fixed;
+    right: 50px;
+    top: 30px;
+    width: 200px;
+    z-index: 99999;
+  }
   .version {
     cursor: help;
     opacity: 0.1;
@@ -100,7 +107,7 @@ body {
       font-size: inherit !important;
     }
     .input-item-desc {
-      width: 275px;
+      width: 300px;
       max-width: 285px;
       margin-right: 25px;
       font-size: inherit !important;
@@ -112,13 +119,13 @@ body {
       font-size: inherit !important;
     }
     .input-item-price {
-      text-align: right;
-      width: 90px;
+      text-align: center;
+      width: 110px;
       margin-right: 60px;
       font-size: inherit !important;
     }
     .input-item-total {
-      text-align: right;
+      text-align: center;
       width: 90px;
       font-size: inherit !important;
     }
@@ -255,21 +262,17 @@ body {
     padding: 0 !important;
     overflow: hidden;
     page-break-after: always !important;
+    print-color-adjust: exact;
   }
   // Controls
   textarea {
     resize: none;
   }
-  .version {
-    display: none;
-  }
-  .btn-print {
-    display: none;
-  }
-  .btn-mode {
-    display: none;
-  }
-  .btn-add-item {
+  .version,
+  .btn-print,
+  .btn-mode,
+  .btn-add-item,
+  .currency {
     display: none;
   }
   ::-webkit-input-placeholder {

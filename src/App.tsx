@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Input, Button, Switch, Typography } from "antd";
+import { Input, Button, Switch, Typography, Select } from "antd";
 import {
   PrinterOutlined,
   PlusCircleOutlined,
@@ -11,11 +11,6 @@ import BillCover from "./assets/cover.png";
 
 const { Paragraph } = Typography;
 const { TextArea } = Input;
-
-const formatter = new Intl.NumberFormat("fr-FR", {
-  style: "currency",
-  currency: "EUR",
-});
 
 function App() {
   const cover = document.querySelector("#page-bg") as HTMLImageElement;
@@ -30,6 +25,12 @@ function App() {
 
   // Bill state
   const [total, setTotal] = useState<string>("");
+  const [currency, setCurrency] = useState<Intl.NumberFormat>(
+    new Intl.NumberFormat("fr-FR", {
+      style: "currency",
+      currency: "EUR",
+    })
+  );
   const [accountBank, setAccountBank] = useState<string>("Attijari BANK");
   const [accountName, setAccountName] = useState<string>("Ste HADYL Consult");
   const [accountNb, setAccountNb] = useState<string>("04034120004048782978");
@@ -77,11 +78,11 @@ function App() {
     setItems(
       items.map((e) => ({
         ...e,
-        price: formatter.format(Number.parseFloat(e.price)),
-        total: formatter.format(Number.parseFloat(e.total)),
+        price: currency.format(Number.parseFloat(e.price)),
+        total: currency.format(Number.parseFloat(e.total)),
       }))
     );
-    setTotal(formatter.format(Number.parseFloat(total)));
+    setTotal(currency.format(Number.parseFloat(total)));
     setTimeout(() => {
       window.print();
       setTimeout(() => {
@@ -100,7 +101,7 @@ function App() {
     }, 500);
   };
 
-  const changeMode = (value: boolean) => {
+  const changeMode = () => {
     if (mode === "BILL") {
       cover.src = BlancCover;
       setMode("BLANC");
@@ -108,6 +109,15 @@ function App() {
       cover.src = BillCover;
       setMode("BILL");
     }
+  };
+
+  const changeCurrency = (currency: string) => {
+    setCurrency(
+      new Intl.NumberFormat("fr-FR", {
+        style: "currency",
+        currency,
+      })
+    );
   };
 
   return (
@@ -289,7 +299,7 @@ function App() {
                   <td>
                     <Input
                       className="input-item-price"
-                      placeholder="0 000 €"
+                      placeholder={currency.format(0)}
                       bordered={false}
                       value={item.price}
                       onChange={(e) => {
@@ -327,7 +337,7 @@ function App() {
                   <td>
                     <Input
                       className="input-item-total"
-                      placeholder="0 000 €"
+                      placeholder={currency.format(0)}
                       bordered={false}
                       value={item.total}
                       onChange={(e) =>
@@ -348,16 +358,24 @@ function App() {
             placeholder="Total"
             bordered={false}
           />
-          <Input className="input-sub" placeholder="9 999 €" bordered={false} />
+          <Input
+            className="input-sub"
+            placeholder={currency.format(9999)}
+            bordered={false}
+          />
           <Input
             className="input-price-text"
             placeholder="Discount"
             bordered={false}
           />
-          <Input className="input-price" placeholder="999 €" bordered={false} />
+          <Input
+            className="input-price"
+            placeholder={currency.format(999)}
+            bordered={false}
+          />
           <Input
             className="input-net"
-            placeholder="9 000 €"
+            placeholder={currency.format(9000)}
             bordered={false}
             onChange={(e) => setTotal(e.target.value)}
             value={total}
@@ -373,6 +391,18 @@ function App() {
             src={stamp}
             loading="eager"
             alt="Signature & stamp"
+          />
+          <Select
+            className="currency"
+            onChange={changeCurrency}
+            value={currency.resolvedOptions().currency}
+            options={[
+              { label: "€ - Euro", value: "EUR" },
+              { label: "$ - US Dollar", value: "USD" },
+              { label: "£ - UK Pound", value: "GBP" },
+              { label: "TND - Tunisian Dinar", value: "TND" },
+              { label: "CHF - Swiss Franc", value: "CHF" },
+            ]}
           />
           <Button
             className="btn-add-item"
